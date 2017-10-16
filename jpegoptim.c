@@ -891,7 +891,7 @@ int main(int argc, char **argv)
   } while (++i<argc && !stdin_mode);
 
 
-  if (totals_mode && !quiet_mode)
+  if (totals_mode)
     fprintf(LOG_FH,"Average ""compression"" (%ld files): %0.2f%% (%0.0fk)\n",
 	    average_count, average_rate/average_count, total_save);
   jpeg_destroy_decompress(&dinfo);
